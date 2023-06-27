@@ -1,10 +1,9 @@
-from login import login_user
 
 from photo import download_photo
-
-
+from instagrapi import Client
 def cli():
-    cl = login_user("nikaaksenina", "N52483156")
+    cl = Client()
+    cl.login("nikaaksenina", "N52483156")
     print("Виберіть завдання:"
           "\n1 запостити іпсо"
           "\n2 закоментити іпсо"
